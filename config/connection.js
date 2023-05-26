@@ -1,6 +1,6 @@
-const {connect, connection} = requre('mongoose');
+const {connect, connection} = require('mongoose');
 
-const connectionString = process.env.MONGODB_URI || 'mongodb: //localhost:27017/socialNetworkDB';
+const connectionString = process.env.MONGODB_URI || 'mongodb://localhost:27017/socialNetworkDB';
 
 connect(connectionString, {
     useNewUrlParser: true,

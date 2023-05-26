@@ -16,7 +16,7 @@ const thoughtSchema = new Schema(
             get: (timestamp) => moment(timestamp).format('MMM Do, YYY [at] hh:mm a'),
         },
         username: {
-            type: String,
+            type: String, 
             required: true,
         },
         reactions: [reactionSchema],
